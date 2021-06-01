@@ -17,8 +17,11 @@ Examples using the pure-Java configuration library [*Typesafe Config*](https://g
 General clean-ups, TODOs and things I wish to implement for this project:
 
 * Overwrite the config with an environment variable
+* Add tests
 
 ## Reference
 
-* [TypeSafe Config official example programs](https://github.com/lightbend/config/tree/main/examples/java)
+* [Typesafe Config official example programs](https://github.com/lightbend/config/tree/main/examples/java)
   * The official repos has terrific examples apps that show simple and advanced ways to use the library.
+* [Typesafe Config: *HOCON.md*](https://github.com/lightbend/config/blob/main/HOCON.md)
+  * The official repo includes a great description of the HOCON file format (i.e.`.conf` files) 

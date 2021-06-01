@@ -10,10 +10,11 @@ public class Main {
 
     private static final Logger log = LoggerFactory.getLogger(Main.class);
 
-    public static void main(String[] args) {
-        var message = Settings.message;
+    public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < Settings.repetitions; i++) {
-            log.info(message);
+            log.info(Settings.message);
+            //noinspection BusyWait
+            Thread.sleep(Settings.pause);
         }
     }
 }
