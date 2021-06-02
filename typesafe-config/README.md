@@ -13,6 +13,8 @@ Examples using the pure-Java configuration library [*Typesafe Config*](https://g
   * `./gradlew run`
 * You should see something like this:
   ![output.png](output.png)
+* Alternatively, run the program and override one of the values using an environment variable:
+  * ` CONFIG_FORCE_message="Hi from an environment variable!" ./gradlew run`
 * Run the tests:
   * `./gradlew test`
 
@@ -20,7 +22,7 @@ Examples using the pure-Java configuration library [*Typesafe Config*](https://g
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* Overwrite the config with an environment variable
+* DONE Overwrite the config with an environment variable
 * DONE Add tests
 * DONE Figure out why Typesafe Config is caching system properties between executions of the test methods. And fix the test.
 
