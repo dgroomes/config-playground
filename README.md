@@ -23,6 +23,13 @@ Examples using the pure-Java configuration library [*Typesafe Config*](https://g
 
 See the README in [typesafe-config/](typesafe-config/).
 
+## Wish List
+
+General clean-ups, TODOs and things I wish to implement for this project:
+
+* Add a YAML sub-project
+* Potentially add a [CUE](https://github.com/cuelang/cue) sub-project
+
 ## Reference
 
 * [Spring configuration example project: `dgroomes/spring-playground`](https://github.com/dgroomes/spring-playground)
