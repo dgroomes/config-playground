@@ -13,13 +13,16 @@ Examples using the pure-Java configuration library [*Typesafe Config*](https://g
   * `./gradlew run`
 * You should see something like this:
   ![output.png](output.png)
+* Run the tests:
+  * `./gradlew test`
 
 ## Wish List
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
 * Overwrite the config with an environment variable
-* Add tests
+* DONE Add tests
+* Figure out why Typesafe Config is caching system properties between executions of the test methods. And fix the test.
 
 ## Reference
 
