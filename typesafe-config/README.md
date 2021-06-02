@@ -10,7 +10,9 @@ Examples using the pure-Java configuration library [*Typesafe Config*](https://g
 
 * Use Java 11
 * Run the program:
-    * `./gradlew run`
+  * `./gradlew run`
+* You should see something like this:
+  ![output.png](output.png)
 
 ## Wish List
 
