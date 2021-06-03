@@ -17,6 +17,10 @@ Examples using the pure-Java configuration library [*Typesafe Config*](https://g
   * ` CONFIG_FORCE_message="Hi from an environment variable!" ./gradlew run`
 * Run the tests:
   * `./gradlew test`
+  
+Here are some more variations of invoking the program:
+* `PAUSE="5 seconds" ./gradlew run`
+* `pause1="10 seconds" ./gradlew run`
 
 ## Wish List
 
@@ -25,8 +29,8 @@ General clean-ups, TODOs and things I wish to implement for this project:
 * DONE Overwrite the config with an environment variable
 * DONE Add tests
 * DONE Figure out why Typesafe Config is caching system properties between executions of the test methods. And fix the test.
-* Create a highly circuitous configuration. It should have a default and be substitutable by an environment
-  variable.  
+* DONE Create a highly circuitous configuration. It should have a default and be substitutable by an environment
+  variable.
 
 ## Reference
 
