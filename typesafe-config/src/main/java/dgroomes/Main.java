@@ -15,10 +15,11 @@ public class Main {
         Settings settings = initSettings();
 
         for (int i = 0; i < settings.repetitions; i++) {
-            log.info(settings.message);
+            log.info(settings.repeatingMessage);
             //noinspection BusyWait
             Thread.sleep(settings.pause);
         }
+        log.info(settings.finalMessage);
     }
 
     private static Settings initSettings() {

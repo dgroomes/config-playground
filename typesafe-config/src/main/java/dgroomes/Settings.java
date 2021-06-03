@@ -16,9 +16,10 @@ public class Settings {
     private static final Logger log = LoggerFactory.getLogger(Settings.class);
     private final Config config;
 
-    public final String message;
+    public final String repeatingMessage;
     public final long pause;
     public final int repetitions;
+    public final String finalMessage;
 
     public Settings(Config config) {
         // The config object should be initialized by the main program body
@@ -26,11 +27,12 @@ public class Settings {
 
         // Use the convenience type-specific methods like "getInt" and "getDuration" to find configuration values by name
         // and convert them to the specified Java type.
-        this.message = config.getString("message");
+        this.repeatingMessage = config.getString("repeating-message");
         this.pause = config.getDuration("pause", TimeUnit.MILLISECONDS);
 
         // Notice the "debug" method call here. See its method body below.
         this.repetitions = config.getInt(debug("repetitions"));
+        this.finalMessage = config.getString(debug("final-message"));
     }
 
     /**

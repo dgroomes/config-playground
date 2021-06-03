@@ -25,6 +25,8 @@ General clean-ups, TODOs and things I wish to implement for this project:
 * DONE Overwrite the config with an environment variable
 * DONE Add tests
 * DONE Figure out why Typesafe Config is caching system properties between executions of the test methods. And fix the test.
+* Create a highly circuitous configuration. It should have a default and be substitutable by an environment
+  variable.  
 
 ## Reference
 
