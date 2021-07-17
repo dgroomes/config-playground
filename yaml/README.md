@@ -1,6 +1,6 @@
 # yaml
 
-Example Java program that uses a YAML file for config.
+Example Java program that uses a YAML (YAML Ain't Markup Language) file for config.
 
 ## Why?
 
@@ -12,9 +12,11 @@ infrastructure tooling, etc.
 
 Follow these instructions to build and run the program:
 
+1. Use Java 11
 1. Build and run:
    * `./gradlew run`
-   * You should see the program output the results of serializing and deserializing to and from YAML.
+   * You should see the output of a simple program that is configured with values read from the `config.yml` file in the
+     classpath resources.
 
 ## Wish List
 
@@ -28,3 +30,4 @@ General clean-ups, TODOs and things I wish to implement for this project:
 
 * [*SnakeYAML* git repo on BitBucket](https://bitbucket.org/asomov/snakeyaml/wiki/Documentation)
   * Thank you SnakeYAML project, for implementing a YAML parser/generator in Java!
+* [Official YAML site](https://yaml.org/)

@@ -7,8 +7,9 @@ import org.yaml.snakeyaml.Yaml;
 import java.util.Map;
 
 /**
- * A configuration abstraction that is backed by a YAML file. This class takes care of the implementation detail of
- * deserializing from the YAML document into Java values.
+ * An application configuration abstraction backed by a YAML file.
+ *
+ * This class takes care of the implementation detail of deserializing from the YAML configuration file into Java values.
  */
 public class Config {
 

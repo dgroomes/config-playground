@@ -1,0 +1,5 @@
+[app-config]
+
+repetitions = 5
+repeating-message = "Hello world from the 'config.toml' file!"
+pause = 2

@@ -24,3 +24,4 @@ rootProject.name = "config-playground"
 // You get code completion and project navigation out-of-the-box. Pretty slick!
 includeBuild("typesafe-config")
 includeBuild("yaml")
+includeBuild("toml")
