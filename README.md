@@ -23,12 +23,17 @@ Examples using the pure-Java configuration library [*Typesafe Config*](https://g
 
 See the README in [typesafe-config/](typesafe-config/).
 
+### `yaml/`
+
+Example Java program that uses a YAML file for config.    
+
 ## Wish List
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* Add a YAML sub-project
+* IN PROGRESS Add a YAML sub-project
 * Potentially add a [CUE](https://github.com/cuelang/cue) sub-project
+* Add a TOML sub-project
 
 ## Reference
 
