@@ -1,62 +1,40 @@
 package dgroomes;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import org.yaml.snakeyaml.Yaml;
 
 import java.util.List;
 
 /**
- * A serializer and deserializer (often referred to as a "serde") for serializing a list of Java objects into a YAML
- * document and by converse, deserializing a YAML document into a list of Java objects.
+ * A serializer and deserializer (often referred to as a "serde") for serializing a list of Java values into a YAML
+ * document and by converse, deserializing a YAML document into a list of Java values.
  * <p>
- * This is a toy class that exists to illustrate Jackson's YAML support.
+ * This is a toy class that exists to illustrate SnakeYAML.
  */
 public class YamlSerde {
 
-    public enum Fruit {
-        APPLE, BANANA, ORANGE
-    }
-
-    private final ObjectMapper objectMapper;
+    private final Yaml yaml;
 
     public YamlSerde() {
-        this(new ObjectMapper(new YAMLFactory()));
-    }
-
-    public YamlSerde(ObjectMapper objectMapper) {
-        this.objectMapper = objectMapper;
+        yaml = new Yaml();
     }
 
     /**
-     * Serialize a list of Fruit objects into a YAML string
+     * Serialize a list of values into a YAML document
      *
-     * @param fruits list of fruits to serialize
-     * @return the list of fruits serialized as a YAML-formatted string
+     * @param values list of values to serialize
+     * @return a string value of the given values serialized into a YAML document
      */
-    public String serialize(List<Fruit> fruits) {
-        try {
-            return objectMapper.writeValueAsString(fruits);
-        } catch (JsonProcessingException e) {
-            throw new IllegalStateException("Failed to serialize the list of Fruit objects", e);
-        }
+    public String serialize(List<Object> values) {
+        return yaml.dump(values);
     }
 
-    TypeReference<List<Fruit>> LIST_FRUIT_TYPE = new TypeReference<List<Fruit>>() {
-    };
-
     /**
-     * Deserialize a YAML document of fruits into a list of fruit objects.
+     * Deserialize a YAML list document into a list of Java values.
      *
      * @param yaml the YAMl document to deserialize
-     * @return a list of fruit objects
+     * @return the deserialized list of Java values
      */
-    public List<Fruit> deserialize(String yaml) {
-        try {
-            return objectMapper.readValue(yaml, LIST_FRUIT_TYPE);
-        } catch (JsonProcessingException e) {
-            throw new IllegalStateException("Failed to deserialize the YAML document of fruit into a list of objects", e);
-        }
+    public List<Object> deserialize(String yaml) {
+        return this.yaml.load(yaml);
     }
 }

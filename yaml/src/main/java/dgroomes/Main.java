@@ -11,14 +11,14 @@ public class Main {
 
     public static void main(String[] args) {
         var yamlSerde = new YamlSerde();
-        var fruit = List.of(YamlSerde.Fruit.ORANGE, YamlSerde.Fruit.BANANA, YamlSerde.Fruit.APPLE);
+        List<Object> values = List.of("Hello", 123, true);
 
         // Serialize
-        var serializedYaml = yamlSerde.serialize(fruit);
-        log.info("Serialized a list of fruit objects in the following YAML document:\n{}", serializedYaml);
+        var serializedYaml = yamlSerde.serialize(values);
+        log.info("Serialized a list of Java values into the following YAML list document:\n{}", serializedYaml);
 
         // Deserialize
         var deserializedObjects = yamlSerde.deserialize(serializedYaml);
-        log.info("Deserialized a YAML document of fruits into a list of fruit objects: {}", deserializedObjects);
+        log.info("Deserialized a YAML list document into a list of Java values: {}", deserializedObjects);
     }
 }
