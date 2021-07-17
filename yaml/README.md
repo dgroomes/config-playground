@@ -20,7 +20,7 @@ Follow these instructions to build and run the program:
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* Instead of using the `Fruit` enum as the type to (de)serialize to, use an object that represents something that looks
+* DONE Instead of using the `Fruit` enum as the type to (de)serialize to, use an object that represents something that looks
   like application configuration. This would be more inline with the spirit of this repo.
 * DONE (Answer: yes. Use SnakeYAML straight up instead of Jackson) Can the objectMapper be configured to not include the document delimiter (`---`)?
 

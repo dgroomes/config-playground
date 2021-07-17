@@ -1,0 +1,3 @@
+repetitions: 5
+repeating-message: Hello world from the 'conf.yml' file!
+pause: 2
