@@ -1,6 +1,6 @@
-val slf4jVersion = "1.7.30" // releases: http://www.slf4j.org/news.html
-val junitJupiterVersion = "5.7.2" // releases: https://junit.org/junit5/docs/current/release-notes/index.html
-val typesafeConfigVersion = "1.4.1" // releases: https://github.com/lightbend/config/releases
+val slf4jVersion = "1.7.36" // SLF4J releases: http://www.slf4j.org/news.html
+val junitJupiterVersion = "5.8.2" // JUnit releases: https://junit.org/junit5/docs/current/release-notes/index.html
+val typesafeConfigVersion = "1.4.2" // TypeSafe Comfig releases: https://github.com/lightbend/config/tags
 
 plugins {
     java

@@ -1,5 +1,5 @@
-val slf4jVersion = "1.7.30" // releases: http://www.slf4j.org/news.html
-val tomlJVersion = "1.0.0" // releases: https://github.com/tomlj/tomlj/releases
+val slf4jVersion = "1.7.36" // SLF4J releases: http://www.slf4j.org/news.html
+val tomlJVersion = "1.0.0" // TomlJ releases: https://github.com/tomlj/tomlj/releases
 
 plugins {
     java

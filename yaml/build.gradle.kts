@@ -1,5 +1,5 @@
-val slf4jVersion = "1.7.30" // releases: http://www.slf4j.org/news.html
-val snakeYamlVersion = "1.25" // releases: https://bitbucket.org/asomov/snakeyaml/wiki/Installation
+val slf4jVersion = "1.7.36" // SLF4J releases: http://www.slf4j.org/news.html
+val snakeYamlVersion = "1.30" // SnakeYAML releases: https://bitbucket.org/snakeyaml/snakeyaml/wiki/Installation
 
 plugins {
     java
