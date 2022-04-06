@@ -8,15 +8,15 @@ Examples using the pure-Java configuration library [*Typesafe Config*](https://g
 
 ## Instructions
 
-* Use Java 11
-* Run the program:
-  * `./gradlew run`
-* You should see something like this:
-  ![output.png](output.png)
-* Alternatively, run the program and override one of the values using an environment variable:
-  * ` CONFIG_FORCE_message="Hi from an environment variable!" ./gradlew run`
-* Run the tests:
-  * `./gradlew test`
+1. Use Java 17
+1. Run the program:
+    * `./gradlew run`
+1. You should see something like this:
+    ![output.png](output.png)
+1. Alternatively, run the program and override one of the values using an environment variable:
+    * `CONFIG_FORCE_repeating__message="Hi from an environment variable!" ./gradlew run`
+1. Run the tests:
+    * `./gradlew test`
   
 Here are some more variations of invoking the program:
 * `PAUSE="5 seconds" ./gradlew run`

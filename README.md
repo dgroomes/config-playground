@@ -5,7 +5,7 @@
 ## Why?
 
 The range of software configuration tools, languages and idioms are infinite. At times, configuration work feels like
-it is about 50% of software engineering! Granted how large the space is and how much time we spend doing it, I want to
+it is about 50% of software engineering! Given how large the space is and how much time we spend doing it, I want to
 chisel away at the mountain of configuration options and learn them in-depth.
 
 ## Standalone sub-projects
