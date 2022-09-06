@@ -32,7 +32,7 @@ JSON are already invested in Jackson. I would prefer Jackson over TomlJ for TOML
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* [ ] Switch over to Jackson and away from TomlJ. 
+* [x] DONE Switch over to Jackson and away from TomlJ. 
 
 
 ## Reference
