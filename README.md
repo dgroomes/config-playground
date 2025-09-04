@@ -1,12 +1,14 @@
 # config-playground
 
-📚 Learning and exploring various configuration technologies.
+📚 Learning and exploring various configuration technologies in the JVM space.
 
-## Why?
+
+## Overview
 
 The range of software configuration tools, languages and idioms are infinite. At times, configuration work feels like
 it is about 50% of software engineering! Given how large the space is and how much time we spend doing it, I want to
 chisel away at the mountain of configuration options and learn them in-depth.
+
 
 ## Standalone sub-projects
 
@@ -17,11 +19,13 @@ re-using the code.
 
 The sub-projects include:
 
+
 ### `typesafe-config/`
 
 Examples using the pure-Java configuration library [*Typesafe Config*](https://github.com/lightbend/config).
 
 See the README in [typesafe-config/](typesafe-config/).
+
 
 ### `yaml/`
 
@@ -29,19 +33,22 @@ Example Java program that uses a YAML (YAML Ain't Markup Language) file for conf
 
 See the README in [yaml/](yaml/).
 
+
 ### `toml/`
 
 Example Java program that uses a TOML (Tom's Obvious Minimal Language) file for config.
 
 See the README in [toml/](toml/).
 
+
 ## Wish List
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* DONE Add a YAML sub-project
-* Potentially add a [CUE](https://github.com/cuelang/cue) sub-project
-* DONE Add a TOML sub-project
+* [x] DONE Add a YAML sub-project
+* [ ] SKIP (I haven't heard much of CUE in recent years) Potentially add a [CUE](https://github.com/cuelang/cue) sub-project
+* [x] DONE Add a TOML sub-project
+
 
 ## Reference
 
