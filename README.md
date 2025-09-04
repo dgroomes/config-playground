@@ -48,6 +48,13 @@ Examples using Spring Framework Core's property resolution and environment abstr
 See the README in [spring/](spring/).
 
 
+### `hoplite/`
+
+Example using the Hoplite Kotlin-based configuration loading library.
+
+See the README in [hoplite/](hoplite/).
+
+
 ## Wish List
 
 General clean-ups, TODOs and things I wish to implement for this project:
