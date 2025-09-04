@@ -1,6 +1,6 @@
-val slf4jVersion = "1.7.36" // SLF4J releases: http://www.slf4j.org/news.html
-val junitJupiterVersion = "5.8.2" // JUnit releases: https://junit.org/junit5/docs/current/release-notes/index.html
-val typesafeConfigVersion = "1.4.2" // TypeSafe Comfig releases: https://github.com/lightbend/config/tags
+val slf4jVersion = "2.0.17" // SLF4J releases: http://www.slf4j.org/news.html
+val junitVersion = "5.13.4" // JUnit releases: https://junit.org/junit5/docs/current/release-notes/index.html
+val typesafeConfigVersion = "1.4.4" // TypeSafe Comfig releases: https://github.com/lightbend/config/tags
 
 plugins {
     java
@@ -12,12 +12,14 @@ repositories {
 }
 
 dependencies {
-    implementation("org.slf4j:slf4j-api:$slf4jVersion")
-    implementation("org.slf4j:slf4j-simple:$slf4jVersion")
     implementation("com.typesafe:config:$typesafeConfigVersion")
+    implementation("org.slf4j:slf4j-api:$slf4jVersion")
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
+    runtimeOnly("org.slf4j:slf4j-simple:$slf4jVersion")
+
+    testImplementation("org.junit.jupiter:junit-jupiter:$junitVersion")
+
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks {
