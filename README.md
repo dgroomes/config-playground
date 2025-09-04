@@ -41,6 +41,13 @@ Example Java program that uses a TOML (Tom's Obvious Minimal Language) file for 
 See the README in [toml/](toml/).
 
 
+### `spring/`
+
+Examples using Spring Framework Core's property resolution and environment abstraction features.
+
+See the README in [spring/](spring/).
+
+
 ## Wish List
 
 General clean-ups, TODOs and things I wish to implement for this project:
@@ -48,6 +55,7 @@ General clean-ups, TODOs and things I wish to implement for this project:
 * [x] DONE Add a YAML sub-project
 * [ ] SKIP (I haven't heard much of CUE in recent years) Potentially add a [CUE](https://github.com/cuelang/cue) sub-project
 * [x] DONE Add a TOML sub-project
+* [x] DONE Add a Spring (core) sub-project
 
 
 ## Reference
